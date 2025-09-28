@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login do Aluno</title>
+  <link rel="stylesheet" href="css/style_rota_aluno.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login Aluno</h1>
+
+    <div id="mensagem" class="mensagem"></div>
+
+
+    <form id="form-login-aluno">
+      <!-- CPF -->
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF" required />
+      <span class="erro" id="erro-cpf"></span>
+
+      <!-- Matrícula -->
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" placeholder="Digite sua matrícula" required />
+      <span class="erro" id="erro-matricula"></span>
+
+      <!-- Botão de login -->
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Não tem cadastro? <a href="index_aluno.html">Cadastrar aluno</a></p>
+  </div>
+
+  <script src="js/aluno_rota_login.js"></script>
+</body>
+</html>

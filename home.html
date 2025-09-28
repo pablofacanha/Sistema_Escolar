@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/stylehome.css">
+  <title>Página Inicial</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <h1>Gerenciamento de Alunos</h1>
+        <button id="btn-voltar">← Voltar</button>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filtros">
+      <label for="filtro-turma">Filtrar por Turma:</label>
+      <select id="filtro-turma">
+        <option value="">Todas</option>
+      </select>
+
+      <label for="filtro-curso">Filtrar por Curso:</label>
+      <select id="filtro-curso">
+        <option value="">Todos</option>
+      </select>
+    </div>
+
+    <!-- Tabela de Alunos -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Matrícula</th>
+          <th>Turma</th>
+          <th>Curso</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-alunos">
+        <!-- Alunos serão inseridos aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal de confirmação para exclusão de aluno -->
+  <div id="modal-confirmacao" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+      <p>Tem certeza que deseja excluir este aluno?</p>
+      <button id="btn-confirmar-exclusao">Sim</button>
+      <button id="btn-cancelar-exclusao">Não</button>
+    </div>
+  </div>
+
+  <!-- Mensagem de sucesso -->
+  <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 15px; text-align: center; font-weight: bold;"></div>
+
+
+  <script src="js/home.js"></script>
+</body>
+</html>

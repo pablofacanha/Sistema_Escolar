@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Usuário</h1>
+    <form id="form-cadastro">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required>
+      <span class="erro" id="erro-nome"></span>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+      <span class="erro" id="erro-cpf"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+      <span class="erro" id="erro-email"></span>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Crie uma senha" required>
+      <span class="erro" id="erro-senha"></span>
+
+      <label for="confirmarSenha">Confirmar Senha:</label>
+      <input type="password" id="confirmarSenha" placeholder="Confirme a senha" required>
+      <span class="erro" id="erro-confirmar"></span>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <!-- Caixa de texto para aparecer a mensagem de sucesso -->
+    <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 10px;"></div>
+
+    <p>Já tem conta? <a href="login.html">Ir para login</a></p>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

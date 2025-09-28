@@ -1,0 +1,105 @@
+/* Reset de margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0E7DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container central */
+.container {
+  background-color: #74070E;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilo do título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input */
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Botão */
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #F0E7DA;
+  color: #74070E;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #e4d7c1;
+}
+
+/* Erros */
+.erro {
+  color: yellow;
+  font-size: 0.9em;
+}
+
+/* Link de login */
+p {
+  margin-top: 15px;
+  text-align: center;
+}
+p a {
+  color: #F0E7DA;
+  text-decoration: underline;
+}
+
+
+/* Estilo base da mensagem */
+.mensagem {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+  
+  
+}
+
+/* Estilo para mensagem de sucesso */
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Estilo para mensagem de erro */
+.mensagem.erro {
+  background-color: #d4edda;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

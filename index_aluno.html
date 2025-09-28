@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Aluno</title>
+  <link rel="stylesheet" href="css/style_rota_aluno.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Aluno</h1>
+
+    <div id="mensagem" style="display: none; margin-bottom: 15px; padding: 10px; border-radius: 5px; font-weight: bold;"></div>
+    
+    <form id="form-cadastro-aluno">
+      <!-- Nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Nome completo" required />
+      <span class="erro" id="erro-nome"></span>
+
+      <!-- CPF -->
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF" required />
+      <span class="erro" id="erro-cpf"></span>
+
+      <!-- Matrícula -->
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" placeholder="Matrícula do aluno" required />
+      <span class="erro" id="erro-matricula"></span>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Caixa de texto para aparecer a mensagem de sucesso -->
+    <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 10px;"></div>    
+
+    <p>Já tem cadastro? <a href="login_aluno.html">Ir para o login</a></p>
+  </div>
+
+  <script src="js/aluno_rota_cadastro.js"></script>
+</body>
+</html>

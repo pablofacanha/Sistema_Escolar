@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login do Sistema</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+
+    <form id="form-login">
+      <label for="usuario">CPF ou Email:</label>
+      <input type="text" id="usuario" placeholder="Digite seu CPF ou Email" required>
+      <span class="erro" id="erro-usuario"></span>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" required>
+      <span class="erro" id="erro-senha"></span>
+
+      <button type="submit">Login</button>
+    </form>
+    <!-- Caixa de texto para aparecer a mensagem de sucesso -->
+    <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 10px;"></div>    
+
+    <p>Não tem cadastro? <a href="index.html">Cadastrar usuário</a></p>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
